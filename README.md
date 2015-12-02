@@ -30,7 +30,6 @@ class Foo {
   }
 }
 
-// Fancypants ES6
 var foo = new Foo(), whoops = new Foo();
 
 console.log(foo.bar()); // "Hello World"
