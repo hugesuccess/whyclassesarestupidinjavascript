@@ -3,7 +3,7 @@
 A quick demonstration why classes in ES6 is a crazypants nightmare.
 
 The key thing to remember when dealing with classes in ES6/ES2015 is that they are 
-not classes in the traditional (Java) sense. According to [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes)
+not classes in the traditional (Java) sense. According to [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes):
 
 >>JavaScript classes are introduced in ECMAScript 6 
 and are syntactical sugar over JavaScript's existing 
@@ -35,9 +35,10 @@ var foo = new Foo(), whoops = new Foo();
 
 console.log(foo.bar()); // "Hello World"
 
+// Even if the class defined in another module, it's exposed
 foo.constructor.prototype.bar = ()=> 'Whoops!';
 
 console.log(whoops.bar());
 ````
 
-
+Not only does this open js applications to more bugs, but bugs that are much harder to find and debug. Combine this with the amazing|awesome|fantastic ability to add a lot of code to your application with a few keystrokes. This is a recipe for disaster.
