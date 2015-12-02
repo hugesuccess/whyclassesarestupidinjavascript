@@ -14,7 +14,9 @@ class Foo {
   }
 }
 
-var foo = new Foo(), whoops = new Foo();
+//var foo = new Foo(), whoops = Object.create(foo);
+var foo = new Foo(),
+ whoops = new Foo();
 
 console.log(foo.bar()); // "Hello World"
 

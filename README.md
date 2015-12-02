@@ -1,4 +1,4 @@
-# whyclassesarestupidinjavascript
+# Why Classes Are Stupid in JavaScript
 
 A quick demonstration why classes in ES6 is a crazypants nightmare.
 
