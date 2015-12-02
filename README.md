@@ -19,8 +19,7 @@ you knew you where doing something different (and weird). You expected the rules
 to be different because the syntax was different (kind of a big hint). Now,
 the syntax is exactly the same, but the rules are still completely different. It's just pretending to be 'classical', *which makes perfect sense*.
 
-The most egregious being JavaScripts ability to dynamically update an
-instance of a class (even after it has been instantiated!) by manipulating the scope chain.
+The most egregious '*feature*' of JavaScripts implementation of prototypal inheritance is JS's ability to dynamically update an instance of a class (even after it has been instantiated!) by manipulating the Class' scope chain.
 
 For example:
 
