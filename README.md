@@ -19,8 +19,8 @@ you knew you where doing something different (and weird). You expected the rules
 to be different because the syntax was different (kind of a big hint). Now,
 the syntax is exactly the same, but the rules are still completely different.
 
-The most egregious being JavaScripts ability to dynamically update the an
-instance of a class, even after it has been instantiated by manipulating the scope chain.
+The most egregious being JavaScripts ability to dynamically update an
+instance of a class (even after it has been instantiated!) by manipulating the scope chain.
 
 For example:
 
@@ -31,6 +31,7 @@ class Foo {
   }
 }
 
+// Fancypants ES6
 var foo = new Foo(), whoops = new Foo();
 
 console.log(foo.bar()); // "Hello World"
@@ -38,7 +39,8 @@ console.log(foo.bar()); // "Hello World"
 // Even if the class defined in another module, it's exposed
 foo.constructor.prototype.bar = ()=> 'Whoops!';
 
+// Whoops!
 console.log(whoops.bar());
 ````
 
-Not only does this open js applications to more bugs, but bugs that are much harder to find and debug. Combine this with the amazing|awesome|fantastic ability to add a lot of code to your application with a few keystrokes. This is a recipe for disaster.
+Not only does this open js applications to more bugs, but bugs that are much harder to find and debug. Combine this with the amazing|awesome|fantastic ability of NPM to add a lot of code to your application with a few keystrokes. This is a recipe for disaster.
