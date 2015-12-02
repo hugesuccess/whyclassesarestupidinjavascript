@@ -3,8 +3,7 @@
 A quick demonstration why classes in ES6 is a crazypants nightmare.
 
 The key thing to remember when dealing with classes in ES6/ES2015 is that they are 
-not classes in the traditional (Java) sense. According to (MDN)[https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes]
-]:
+not classes in the traditional (Java) sense. According to [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes)
 
 >>JavaScript classes are introduced in ECMAScript 6 
 and are syntactical sugar over JavaScript's existing 
