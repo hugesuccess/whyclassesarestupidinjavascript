@@ -43,4 +43,4 @@ foo.constructor.prototype.bar = ()=> 'Whoops!';
 console.log(whoops.bar());
 ````
 
-Not only does this open js applications to more bugs, but bugs that are much harder to find and debug. Combine this with the amazing|awesome|fantastic ability of NPM to add a lot of code to your application with a few keystrokes. This is a recipe for disaster.
+Not only does this open js applications to more bugs, but bugs that are much harder to find and debug. Combine this with the amazing && awesome && fantastic ability of NPM to add a lot of code to your application with a few keystrokes. This is a recipe for disaster.
